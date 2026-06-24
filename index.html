@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Cruz | GIS Specialist & Spatial Data Analyst</title>
+    <meta name="description" content="Portfolio profesional de Julio Cruz, Consultor GIS y Analista de Datos Espaciales con experiencia en planificación urbana y automatización.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">JC<span class="highlight">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in">
+            <h1>Julio <span class="highlight">Cruz</span></h1>
+            <h2>Consultor GIS | Urban & Territorial Planning | Spatial Data Analyst</h2>
+            <p>Transformando datos espaciales en soluciones estratégicas para el territorio.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contact" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <p>Soy un profesional en <strong>Geografía y Sistemas de Información Geográfica (GIS)</strong>, con sólida experiencia en análisis de datos espaciales, gestión de bases de datos geoespaciales y planificación territorial.</p>
+                    <p>Me apasiona resolver problemas complejos a través de herramientas GIS avanzadas como <strong>ArcGIS, QGIS y Python</strong>, aportando valor en proyectos de alto impacto. Cuento con experiencia comprobada en consultoría técnica para proyectos a gran escala, especialmente en planificación urbana, movilidad y desarrollo de infraestructuras.</p>
+                    <p>Mi enfoque combina el rigor técnico con una visión estratégica, automatizando procesos y generando cartografía y modelos que facilitan la toma de decisiones.</p>
+                </div>
+                <div class="about-stats fade-in-up delay-1">
+                    <div class="stat-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>GIS Avanzado</h3>
+                        <p>Análisis espacial y modelado territorial.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Automatización</h3>
+                        <p>Python, ArcPy, GeoPandas y flujos eficientes.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-city"></i>
+                        <h3>Proyectos Reales</h3>
+                        <p>Master plans, movilidad y gestión ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-idom')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_idom.png" alt="IDOM Masterplan Al Ahsa" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Masterplan Territorial en Al Ahsa</h3>
+                        <p class="project-context">IDOM | Planificación Urbana</p>
+                        <div class="project-tags">
+                            <span>ArcGIS</span>
+                            <span>Análisis Espacial</span>
+                            <span>Cartografía Temática</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in-up delay-1" onclick="openModal('modal-webgis')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_webgis.png" alt="Plataforma Web GIS Vías Verdes" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma Web GIS Vías Verdes</h3>
+                        <p class="project-context">Fundación de Ferrocarriles Españoles</p>
+                        <div class="project-tags">
+                            <span>Web GIS</span>
+                            <span>Bases de Datos Espaciales</span>
+                            <span>Interoperabilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in-up delay-2" onclick="openModal('modal-boundaries')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_boundaries.png" alt="Administrative Boundaries" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Límites Administrativos Europeos</h3>
+                        <p class="project-context">GeoPostcodes | Data Analysis</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Automatización</span>
+                            <span>Bases de Datos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in-up" onclick="openModal('modal-spatial')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_spatial.png" alt="Análisis Espaciales" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Análisis Espaciales e Informes</h3>
+                        <p class="project-context">FFE | Accesibilidad y Población</p>
+                        <div class="project-tags">
+                            <span>QGIS</span>
+                            <span>Informes Técnicos</span>
+                            <span>Análisis de Redes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-in-up delay-1" onclick="openModal('modal-coastal')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_coastal.png" alt="Gestión Litoral" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gestión Litoral y Análisis Urbano</h3>
+                        <p class="project-context">Ayuntamiento de Las Palmas de GC</p>
+                        <div class="project-tags">
+                            <span>Cartografía Técnica</span>
+                            <span>Gestión Ambiental</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card fade-in-up delay-2" onclick="openModal('modal-climate')">
+                    <div class="project-img-wrapper">
+                        <img src="assets/project_climate.png" alt="Análisis Climático" class="project-img">
+                        <div class="project-overlay">
+                            <span>Ver Detalles <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Análisis Climático Detallado</h3>
+                        <p class="project-context">Instituto Oceanográfico de Canarias</p>
+                        <div class="project-tags">
+                            <span>Modelado</span>
+                            <span>Precipitación</span>
+                            <span>Bases de Datos Climáticas</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Habilidades <span class="highlight">Técnicas</span></h2>
+            <div class="skills-container">
+                
+                <div class="skill-category fade-in-up">
+                    <div class="skill-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Sistemas de Información Geográfica</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">ArcGIS Pro</span>
+                        <span class="tag">QGIS</span>
+                        <span class="tag">Google Earth Engine (GEE)</span>
+                        <span class="tag">Geoserver</span>
+                        <span class="tag">Diseño Cartográfico</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-up delay-1">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programación y Automatización</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ArcPy</span>
+                        <span class="tag">GeoPandas</span>
+                        <span class="tag">R</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-up">
+                    <div class="skill-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Bases de Datos Espaciales</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">PostGIS</span>
+                        <span class="tag">Gestión de BBDD</span>
+                        <span class="tag">Administración</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-up delay-1">
+                    <div class="skill-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Gestión y Otros</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Gestión de Proyectos</span>
+                        <span class="tag">Planificación Territorial</span>
+                        <span class="tag">Excel Avanzado</span>
+                        <span class="tag">Inglés (B2)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Experiencia <span class="highlight">Profesional</span></h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2024 - Actualmente</span>
+                        <h3>Consultor GIS</h3>
+                        <h4>IDDTEK para IDOM | Consulting, Engineering, Architecture, Madrid</h4>
+                        <ul class="timeline-list">
+                            <li>Elaboración y redacción de los distintos documentos del máster plan.</li>
+                            <li>Análisis de datos espaciales para la elaboración de un masterplan en Arabia Saudita, integrando información geoespacial en la planificación estratégica.</li>
+                            <li>Colaboración en la creación de mapas temáticos y análisis GIS avanzados para el desarrollo urbano y la infraestructura.</li>
+                            <li>Uso de GIS para visualización de datos geoespaciales y presentación de resultados a equipos multidisciplinarios.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2023 - Mayo 2024</span>
+                        <h3>Técnico de proyectos y técnico GIS</h3>
+                        <h4>Fundación de Ferrocarriles Españoles, Madrid</h4>
+                        <ul class="timeline-list">
+                            <li>Conocimiento en la gestión de bases de datos.</li>
+                            <li>Soporte a la base de datos espacial web.</li>
+                            <li>Elaboración y apoyo en proyectos (Vías Verdes).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2022 - Mayo 2023</span>
+                        <h3>Data Analyst</h3>
+                        <h4>GeoPostcodes, Bruselas</h4>
+                        <ul class="timeline-list">
+                            <li>Conocimiento en la gestión de bases de datos de límites administrativos y postales.</li>
+                            <li>Programación y automatización de procesos GIS.</li>
+                            <li>Preparación de salidas cartográficas acorde a solicitudes de cliente.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;">Formación <span class="highlight">Académica</span></h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2023 - Junio 2025</span>
+                        <h3>Máster en Tecnologías de la Información Geográfica</h3>
+                        <h4>Universidad de Alcalá de Henares</h4>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2018 - Diciembre 2022</span>
+                        <h3>Grado en Geografía y Ordenación del Territorio</h3>
+                        <h4>Universidad de Las Palmas de Gran Canaria</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-card fade-in-up">
+                <h2>¿Hablamos sobre tu próximo proyecto?</h2>
+                <p>Si buscas optimizar la gestión territorial a través del análisis espacial y el desarrollo GIS, no dudes en contactarme.</p>
+                
+                <div class="contact-info">
+                    <a href="mailto:juliocruzalvarez2000@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>juliocruzalvarez2000@gmail.com</span>
+                    </a>
+                    <a href="tel:+34645382308" class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+34 645 38 23 08</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Madrid, España</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Julio Cruz. Todos los derechos reservados.</p>
+            <p class="footer-sub">Desarrollado para Portfolio Profesional</p>
+        </div>
+    </footer>
+
+    <!-- Modals (Popups) for Projects -->
+    
+    <!-- Modal IDOM -->
+    <div id="modal-idom" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-idom')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Masterplan Territorial en Al Ahsa</h2>
+                <p class="modal-context">IDOM | Consulting, Engineering, Architecture</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_idom.png" alt="IDOM Project" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Proyecto de consultoría GIS para la elaboración de un masterplan en Arabia Saudita, integrando información geoespacial de forma estratégica.</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Análisis y Cartografía Temática:</strong> Elaboración de mapas de usos del suelo, infraestructuras y condicionantes ambientales para caracterizar el área de estudio.</li>
+                        <li><strong>Integración de Datos:</strong> Tratamiento y gestión de grandes volúmenes de información geoespacial para transformarlos en resultados claros y útiles.</li>
+                        <li><strong>Rigor Técnico:</strong> Adaptación a contextos internacionales complejos y generación de resultados para la toma de decisiones.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>ArcGIS Pro</span> <span>Análisis Espacial</span> <span>Cartografía</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Web GIS -->
+    <div id="modal-webgis" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-webgis')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Plataforma Web GIS Vías Verdes</h2>
+                <p class="modal-context">Fundación de Ferrocarriles Españoles</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_webgis.png" alt="Vías Verdes Web GIS" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Desarrollo y gestión de la plataforma Web GIS para las Vías Verdes, facilitando la difusión, interoperabilidad y el análisis territorial de estas infraestructuras.</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Gestión de información:</strong> Preparación de bases de datos espaciales vinculadas a trazados ferroviarios.</li>
+                        <li><strong>Soporte técnico:</strong> Mantenimiento continuo para asegurar precisión y actualización de la cartografía web.</li>
+                        <li><strong>Interoperabilidad:</strong> Estructuración de los datos espaciales para visualización eficiente en entornos web de cara al público.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>Web GIS</span> <span>PostGIS / Geoserver</span> <span>Gestión de BD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Boundaries -->
+    <div id="modal-boundaries" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-boundaries')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Límites Administrativos Europeos</h2>
+                <p class="modal-context">GeoPostcodes</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_boundaries.png" alt="Administrative Boundaries" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Trabajo especializado como Data Analyst enfocado en la gestión, análisis y limpieza de límites administrativos a escala europea (Administrative Boundaries product).</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Análisis de límites:</strong> Procesamiento crucial para asegurar la topología y exactitud de los datos para clientes corporativos.</li>
+                        <li><strong>Automatización:</strong> Implementación de procesos automatizados mediante scripts para estandarizar la calidad del producto geoespacial.</li>
+                        <li><strong>Gestión BBDD:</strong> Administración precisa de grandes bases de datos espaciales para soportar el análisis masivo.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>Python</span> <span>SQL</span> <span>Automatización de datos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Coastal -->
+    <div id="modal-coastal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-coastal')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Gestión Litoral y Análisis Urbano</h2>
+                <p class="modal-context">Ayuntamiento de Las Palmas de GC</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_coastal.png" alt="Gestión Litoral" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Elaboración de documentos técnicos vinculados a la gestión ambiental de las playas de La Laja y Las Canteras, y propuestas de dinamización socio-económica.</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Gestión Litoral:</strong> Análisis y desarrollo de documentos para la caracterización ambiental de la zona costera.</li>
+                        <li><strong>Dinamización:</strong> Participación en propuestas de desarrollo socio-económico del entorno urbano portuario.</li>
+                        <li><strong>Cartografía Técnica:</strong> Apoyo en la elaboración de planos para la toma de decisiones ambientales y sociales.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>Cartografía Temática</span> <span>Análisis Urbano</span> <span>Gestión Ambiental</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Climate -->
+    <div id="modal-climate" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-climate')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Análisis Climático Detallado</h2>
+                <p class="modal-context">Instituto Oceanográfico de Canarias</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_climate.png" alt="Análisis Climático" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Estudio de fenómenos climáticos mediante el uso de bases de datos y herramientas GIS para la visualización científica en la planificación territorial.</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Análisis Climático:</strong> Uso de bases de datos climáticas para estudiar fenómenos de precipitación horizontal en entornos insulares.</li>
+                        <li><strong>Cartografía Avanzada:</strong> Elaboración de mapas con gradientes y simbología específica para representar fenómenos ambientales complejos.</li>
+                        <li><strong>Visualización Científica:</strong> Uso avanzado de GIS para transformar datos climáticos en representaciones visuales útiles para el territorio.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>GIS</span> <span>Modelado Climático</span> <span>Bases de Datos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Spatial Analysis -->
+    <div id="modal-spatial" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-spatial')"><i class="fas fa-times"></i></span>
+            <div class="modal-header">
+                <h2>Análisis Espaciales e Informes (Vías Verdes)</h2>
+                <p class="modal-context">Fundación de Ferrocarriles Españoles</p>
+            </div>
+            <div class="modal-body">
+                <img src="assets/project_spatial.png" alt="Análisis Espaciales" class="modal-img">
+                <div class="modal-description">
+                    <h3>Descripción Técnica</h3>
+                    <p>Realización de análisis espaciales complejos para evaluar el impacto de infraestructuras verdes sobre la población y la accesibilidad.</p>
+                    
+                    <h4>Acciones clave:</h4>
+                    <ul>
+                        <li><strong>Análisis de población y accesibilidad:</strong> Estudios de isocronas a pie y en bicicleta para evaluar la conectividad de los trazados.</li>
+                        <li><strong>Elaboración de informes:</strong> Redacción de documentos técnicos y comunicación visual clara de resultados GIS para entidades públicas (ayuntamientos, ministerios).</li>
+                        <li><strong>Apoyo a la toma de decisiones:</strong> Cartografía temática de pendientes y trazados alternativos.</li>
+                    </ul>
+                    
+                    <div class="modal-tools">
+                        <strong>Herramientas:</strong> <span>QGIS</span> <span>Network Analysis</span> <span>Cartografía de Resultados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
